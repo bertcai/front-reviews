@@ -37,4 +37,29 @@ git merge [branch-name]    # 合并指定分支到当前分支
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "你的任意邮箱地址" #创建一个ssh密钥对
+# 将本地代码推送到远程仓库
+git remote add origin git@xxxxxxx
+git branch -M main
+git push -u origin main
+git push origin x:y # 将本地的x分支push到远程的y分支
+git clone git@?/xxx.git # clone远程仓库到本地当前目录下
+git clone git@?/xxx.git yyy # clone 到本地目录下的yyy文件夹
 ```
+
+## 指令简化
+
+将以下内容添加到`~/.bashrc`文件中
+
+```bash
+alias ga="git add"
+alias gc="git commit -v"
+alias gl="git pull"
+alias gp="git push"
+alias gst="git status"
+alias gco="git checkout"
+```
+然后执行
+```bash
+source ~/.bashrc
+```
+使简化指令生效
