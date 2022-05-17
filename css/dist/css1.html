@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css</title>
+    <style>* {
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid green;
+}
+
+span {
+  border: 1px solid red;
+}
+
+.content-box {
+  box-sizing: content-box;
+  width: 100px;
+  border: 3px solid red;
+  padding: 10px;
+}
+
+.border-box {
+  box-sizing: border-box;
+  width: 100px;
+  border: 3px solid #00f;
+  padding: 10px;
+}
+
+.parent {
+  border: 2px solid green;
+  margin-bottom: 10px;
+}
+
+.child1 {
+  border: 2px solid red;
+  margin: 10px 0;
+}
+
+.child2 {
+  border: 2px solid #00f;
+  margin: 10px 0;
+}
+
+body {
+  background: #fff;
+}
+
+.rainbow {
+  height: 200px;
+  border: none;
+  overflow: hidden;
+}
+
+.rainbow div {
+  border: none;
+  overflow: hidden;
+}
+
+.rainbow > div {
+  width: 400px;
+  height: 400px;
+  background: #e61a1a;
+  border-radius: 50%;
+}
+
+.rainbow > div > div {
+  height: 380px;
+  background: #e6e61a;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.rainbow > div > div > div {
+  height: 360px;
+  background: #1ae61a;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.rainbow > div > div > div > div {
+  height: 340px;
+  background: #1ae6e6;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.rainbow > div > div > div > div > div {
+  height: 320px;
+  background: #1a1ae6;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.rainbow > div > div > div > div > div > div {
+  height: 300px;
+  background: #e61ae6;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.rainbow > div > div > div > div > div > div > div {
+  height: 280px;
+  background: #e61a1a;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.rainbow > div > div > div > div > div > div > div > div {
+  height: 280px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+</style>
+</head>
+<body>
+<span>1</span><span>2</span><span>3</span><span>4</span>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div class="content-box">content box</div>
+<div class="border-box">border box</div>
+
+<div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+</div>
+
+<hr>
+<div class="rainbow">
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/css1.e479e372.js"></script></body>
+</html>

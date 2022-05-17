@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid green;
+        }
+
+        span {
+            border: 1px solid red;
+        }
+
+        .content-box {
+            border: 3px solid red;
+            box-sizing: content-box;
+            width: 100px;
+            padding: 10px;
+        }
+
+        .border-box {
+            border: 3px solid blue;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100px;
+        }
+
+        .parent {
+            border: 2px solid green;
+            margin-bottom: 10px;
+        }
+
+        .child1 {
+            border: 2px solid red;
+            margin: 10px 0;
+        }
+
+        .child2 {
+            border: 2px solid blue;
+            margin: 10px 0;
+        }
+
+
+        body {
+            background: white;
+        }
+
+        .rainbow {
+            height: 200px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .rainbow div{
+            overflow: hidden;
+            border: none;
+        }
+
+
+        .rainbow > div {
+            width: 400px;
+            height: 400px;
+            background: hsl(0, 80%, 50%);
+            border-radius: 50%;
+        }
+
+        .rainbow > div > div {
+            height: 380px;
+            margin: 10px;
+            background: hsl(60, 80%, 50%);
+            border-radius: 50%;
+        }
+
+        .rainbow > div > div > div {
+            height: 360px;
+            margin: 10px;
+            background: hsl(120, 80%, 50%);
+            border-radius: 50%;
+        }
+
+        .rainbow > div > div > div > div {
+            height: 340px;
+            margin: 10px;
+            background: hsl(180, 80%, 50%);
+            border-radius: 50%;
+        }
+
+        .rainbow > div > div > div > div > div {
+            height: 320px;
+            margin: 10px;
+            background: hsl(240, 80%, 50%);
+            border-radius: 50%;
+        }
+
+        .rainbow > div > div > div > div > div > div {
+            height: 300px;
+            margin: 10px;
+            background: hsl(300, 80%, 50%);
+            border-radius: 50%;
+        }
+
+        .rainbow > div > div > div > div > div > div > div {
+            height: 280px;
+            margin: 10px;
+            background: hsl(360, 80%, 50%);
+            border-radius: 50%;
+        }
+
+        .rainbow > div > div > div > div > div > div > div > div {
+            height: 280px;
+            margin: 10px;
+            border-radius: 50%;
+            background: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<span>1</span><span>2</span><span>3</span><span>4</span>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div class="content-box">content box</div>
+<div class="border-box">border box</div>
+
+<div class="parent">
+    <div class="child1">1</div>
+    <div class="child2">2</div>
+</div>
+
+<hr>
+<div class="rainbow">
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
