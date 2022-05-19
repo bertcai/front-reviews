@@ -1,10 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        .heart:hover{
+            transform: scale(1.5);
+        }
+
+        .heart {
+            margin-left: 100px;
+            position: relative;
+            display: inline-block;
+            transition: all .5s;
+        }
+        .heart2 {
+            margin-left: 300px;
+            position: relative;
+            display: inline-block;
+            animation: 2s linear 1s infinite beat;
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        .left {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            background: red;
+            transform: rotate(45deg) translateY(93px);
+        }
+
+        .right {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 100%;
+            right: 100%;
+            background: red;
+            transform: rotate(45deg) translateX(93px);
+        }
+
+        .bottom {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transform: rotate(45deg);
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="heart">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+</div>
+<div class="heart2">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+</div>
 </body>
 </html>

@@ -8,7 +8,16 @@
     <title>Css布局</title>
     <style>
 
-        .clearfix::after{
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            border: 1px solid red;
+        }
+
+        .clearfix:after{
             content: '';
             display: block;
             clear: both;
@@ -31,8 +40,9 @@
 <body>
 <header class="clearfix">
     <div class="logo">
+        logo
     </div>
-    <nav></nav>
+    <nav>nav</nav>
 </header>
 </body>
 </html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heart</title>
+    <style>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 100px;
+}
+
+.heart:hover {
+  transform: scale(1.5);
+}
+
+.heart {
+  margin-left: 100px;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.heart2 {
+  margin-left: 300px;
+  animation: beat 2s linear 1s infinite;
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.left {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  transform: rotate(45deg)translateY(93px);
+}
+
+.right {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  transform: rotate(45deg)translateX(93px);
+}
+
+.bottom {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transform: rotate(45deg);
+}
+
+</style>
+</head>
+<body>
+<div class="heart">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+</div>
+<div class="heart2">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+</div>
+<script src="/heart.75c90d62.js"></script></body>
+</html>
