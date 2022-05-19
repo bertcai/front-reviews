@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css布局</title>
+    <style>
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .logo{
+            border: 1px solid red;
+            width: 40px;
+            height: 40px;
+            float: left;
+        }
+        nav{
+            border: 1px solid red;
+            float: left;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<header class="clearfix">
+    <div class="logo">
+    </div>
+    <nav></nav>
+</header>
+</body>
+</html>
