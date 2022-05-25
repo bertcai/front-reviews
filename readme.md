@@ -15,5 +15,7 @@
   - 静态页 跳动的心：https://bertcai.github.io/front-reviews/css/heart
 - HTTP 相关
   - node.js server
+- JS相关
+  - Canvas画板1：https://bertcai.github.io/front-reviews/js/canvas/canvas
 
 * 未完待续...
