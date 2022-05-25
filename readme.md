@@ -16,6 +16,6 @@
 - HTTP 相关
   - node.js server
 - JS相关
-  - Canvas画板1：https://bertcai.github.io/front-reviews/js/canvas/canvas
+  - Canvas画板1：https://bertcai.github.io/front-reviews/js/canvas/canvas.html
 
 * 未完待续...
