@@ -17,5 +17,6 @@
   - node.js server
 - JS相关
   - Canvas画板1：https://bertcai.github.io/front-reviews/js/canvas/canvas.html
+  - JS动画代码，太极图：https://bertcai.github.io/front-reviews/js/resume-animation/index.html
 
 * 未完待续...
